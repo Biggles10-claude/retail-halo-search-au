@@ -1,13 +1,13 @@
 {
   "live_https_url": "https://biggles10-claude.github.io/retail-halo-search-au/",
-  "offers_count": 27,
-  "in_stock_count": 27,
+  "offers_count": 19,
+  "in_stock_count": 19,
   "board_policy": "in_stock_only",
   "cheapest_exact_in_stock": {
-    "title": "GMKtec EVO-X1 AI Mini PC AMD Ryzen\u2122 AI 9 HX 370 - GMKtec",
-    "retailer": "gmktec.com",
-    "price_aud": 1650.47,
-    "url": "https://www.gmktec.com/products/amd-ryzen%E2%84%A2-ai-9-hx-370-evo-x1-ai-mini-pc",
+    "title": "Framework Desktop Mainboard \u2014 Ryzen AI Max+ 395 - 128GB",
+    "retailer": "frame.work",
+    "price_aud": 1699.0,
+    "url": "https://frame.work/au/en/products/framework-desktop-mainboard-amd-ryzen-ai-max-300-series?v=FRAMBM0006",
     "asin": null
   },
   "qa_merge": "2026-10-01T00:39 AWST \u2014 fixed gmktec FX, igaming 8599, dropped PCCG OOS; WEELIAO kept via buybox zip3000",
