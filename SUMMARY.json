@@ -1,18 +1,13 @@
 {
   "live_https_url": "https://biggles10-claude.github.io/retail-halo-search-au/",
-  "offers_count": 22,
+  "offers_count": 17,
   "in_stock_count": 17,
+  "board_policy": "in_stock_only",
   "cheapest_exact_in_stock": {
     "title": "Corsair Workstation 300 Ryzen AI Max+ 395, 128GB RAM, 1TB SSD, Radeon 8060S, Windows 11 Home",
     "retailer": "jw.com.au",
     "price_aud": 6999.0,
     "url": "https://www.jw.com.au/product/corsair-ws-300-ryzen-ai-max-395-128gb-1tb-8060s"
-  },
-  "cheapest_exact_any": {
-    "title": "GMKtec EVO-X2 AI Mini PC Ryzen AI Max+ 395 Superchip 128GB LPDDR5X 2TB SSD",
-    "retailer": "amazon.com.au",
-    "price_aud": 1593.47,
-    "url": "https://www.amazon.com.au/dp/B0FS18K54S"
   },
   "cheapest_equivalent_in_stock": {
     "title": "Corsair Workstation 300 Ryzen AI Max 385, 64GB RAM, 1TB SSD, Radeon 8050S, Windows 11 Home",
@@ -20,12 +15,15 @@
     "price_aud": 5499.0,
     "url": "https://www.jw.com.au/product/corsair-ws-300-ryzen-ai-max-385-64gb-1tb-8050s"
   },
+  "cheapest_dgx_in_stock": {
+    "title": "NVIDIA DGX Spark Founders Edition - 4TB/128GB",
+    "retailer": "igamingcomputer.com.au",
+    "price_aud": 8599.0,
+    "url": "https://igamingcomputer.com.au/products/nvidia-dgx-spark-founders-edition-4tb-128gb"
+  },
   "fx_note": "FX via frankfurter.app as of 2026-09-30: USD->AUD 1.4352",
   "retailers": [
-    "amazon.com.au",
     "centrecom.com.au",
-    "frame.work",
-    "gmktec.com",
     "igamingcomputer.com.au",
     "jw.com.au",
     "pccasegear.com",
@@ -33,17 +31,10 @@
     "prology.net",
     "wisp.net.au"
   ],
-  "unblocked": [
-    "pccasegear Algolia",
-    "jw Algolia",
-    "centrecom API via Playwright",
-    "amazon curl_cffi"
-  ],
-  "still_blocked": [
-    "cplonline Cloudflare 403",
-    "centrecom HTML storefront 403 (API OK)",
-    "scorptec/mwave/Shopping Express: no Halo-class listings found",
-    "aussiedevelopments.com.au DNS NXDOMAIN",
-    "StaticICE: no priced Halo hits this run"
-  ]
+  "wisp_corrected": {
+    "price_aud": 8791.97,
+    "stock": "in_stock"
+  },
+  "dropped_oos": 5,
+  "verified_awst": "2026-10-01T00:27:49+08:00"
 }

@@ -1,6 +1,6 @@
 {
   "kpi": {
-    "offers": 22,
+    "offers": 17,
     "in_stock": 17,
     "cheapest_exact_in_stock": {
       "retailer": "jw.com.au",
@@ -13,25 +13,24 @@
       "price_original": 6999.0,
       "stock": "in_stock",
       "url": "https://www.jw.com.au/product/corsair-ws-300-ryzen-ai-max-395-128gb-1tb-8060s",
-      "scraped_awst": "2026-10-01T00:23:19+08:00",
+      "scraped_awst": "2026-10-01T00:27:49+08:00",
       "ship_to_au_notes": "AU retailer native AUD",
-      "source": "jw_algolia"
+      "source": "jw_algolia_reverify"
     },
     "cheapest_exact_any": {
-      "retailer": "amazon.com.au",
-      "title": "GMKtec EVO-X2 AI Mini PC Ryzen AI Max+ 395 Superchip 128GB LPDDR5X 2TB SSD",
+      "retailer": "jw.com.au",
+      "title": "Corsair Workstation 300 Ryzen AI Max+ 395, 128GB RAM, 1TB SSD, Radeon 8060S, Windows 11 Home",
       "config_match": "exact",
-      "match_notes": "GMKtec Evo-X2; Strix Halo / AI Max; 128GB",
+      "match_notes": "Strix Halo / AI Max; 128GB",
       "product_family": "strix_halo_128",
-      "price_aud": 1593.47,
+      "price_aud": 6999.0,
       "currency_original": "AUD",
-      "price_original": 1593.47,
-      "stock": "oos",
-      "url": "https://www.amazon.com.au/dp/B0FS18K54S",
-      "asin": "B0FS18K54S",
-      "scraped_awst": "2026-09-30T18:13:31+08:00",
-      "ship_to_au_notes": "Amazon AU — currently unavailable",
-      "source": "amazon_dp"
+      "price_original": 6999.0,
+      "stock": "in_stock",
+      "url": "https://www.jw.com.au/product/corsair-ws-300-ryzen-ai-max-395-128gb-1tb-8060s",
+      "scraped_awst": "2026-10-01T00:27:49+08:00",
+      "ship_to_au_notes": "AU retailer native AUD",
+      "source": "jw_algolia_reverify"
     },
     "cheapest_equiv_in_stock": {
       "retailer": "jw.com.au",
@@ -44,9 +43,9 @@
       "price_original": 5499.0,
       "stock": "in_stock",
       "url": "https://www.jw.com.au/product/corsair-ws-300-ryzen-ai-max-385-64gb-1tb-8050s",
-      "scraped_awst": "2026-10-01T00:23:18+08:00",
+      "scraped_awst": "2026-10-01T00:27:49+08:00",
       "ship_to_au_notes": "AU retailer native AUD",
-      "source": "jw_algolia"
+      "source": "jw_algolia_reverify"
     },
     "cheapest_equiv": {
       "retailer": "jw.com.au",
@@ -59,11 +58,11 @@
       "price_original": 5499.0,
       "stock": "in_stock",
       "url": "https://www.jw.com.au/product/corsair-ws-300-ryzen-ai-max-385-64gb-1tb-8050s",
-      "scraped_awst": "2026-10-01T00:23:18+08:00",
+      "scraped_awst": "2026-10-01T00:27:49+08:00",
       "ship_to_au_notes": "AU retailer native AUD",
-      "source": "jw_algolia"
+      "source": "jw_algolia_reverify"
     },
-    "scraped_awst": "2026-10-01T00:24:22+08:00",
+    "scraped_awst": "2026-10-01T00:27:49+08:00",
     "fx_note": "FX via frankfurter.app as of 2026-09-30: USD->AUD 1.4352"
   },
   "per_class": {
@@ -101,26 +100,6 @@
         "verify_notes": "verified_ldjson"
       }
     },
-    "gorgon_192": {
-      "in_stock": null,
-      "any": {
-        "retailer": "gmktec.com",
-        "title": "GMKtec EVO-X5 Pro AMD Ryzen AI Max+ PRO 495 AI Mini PC (192GB Gorgon Halo)",
-        "config_match": "exact",
-        "match_notes": "Gorgon Halo / AI Max+ Pro 495 192GB class",
-        "product_family": "gorgon_192",
-        "price_aud": 9470.88,
-        "currency_original": "USD",
-        "price_original": 6599.0,
-        "fx_rate": 1.4352,
-        "fx_as_of": "2026-09-30",
-        "stock": "oos",
-        "url": "https://www.gmktec.com/products/gmktec-evo-x5-pro-amd-ryzen-ai-max-pro-495-ai-mini-pc",
-        "scraped_awst": "2026-09-30T18:13:31+08:00",
-        "ship_to_au_notes": "GMKtec direct USD; confirm ship-to-AU + duties/GST",
-        "source": "gmktec_listing"
-      }
-    },
     "other_equiv": {
       "in_stock": null,
       "any": null
@@ -137,112 +116,28 @@
         "price_original": 6999.0,
         "stock": "in_stock",
         "url": "https://www.jw.com.au/product/corsair-ws-300-ryzen-ai-max-395-128gb-1tb-8060s",
-        "scraped_awst": "2026-10-01T00:23:19+08:00",
+        "scraped_awst": "2026-10-01T00:27:49+08:00",
         "ship_to_au_notes": "AU retailer native AUD",
-        "source": "jw_algolia"
+        "source": "jw_algolia_reverify"
       },
       "any": {
-        "retailer": "amazon.com.au",
-        "title": "GMKtec EVO-X2 AI Mini PC Ryzen AI Max+ 395 Superchip 128GB LPDDR5X 2TB SSD",
+        "retailer": "jw.com.au",
+        "title": "Corsair Workstation 300 Ryzen AI Max+ 395, 128GB RAM, 1TB SSD, Radeon 8060S, Windows 11 Home",
         "config_match": "exact",
-        "match_notes": "GMKtec Evo-X2; Strix Halo / AI Max; 128GB",
+        "match_notes": "Strix Halo / AI Max; 128GB",
         "product_family": "strix_halo_128",
-        "price_aud": 1593.47,
+        "price_aud": 6999.0,
         "currency_original": "AUD",
-        "price_original": 1593.47,
-        "stock": "oos",
-        "url": "https://www.amazon.com.au/dp/B0FS18K54S",
-        "asin": "B0FS18K54S",
-        "scraped_awst": "2026-09-30T18:13:31+08:00",
-        "ship_to_au_notes": "Amazon AU — currently unavailable",
-        "source": "amazon_dp"
+        "price_original": 6999.0,
+        "stock": "in_stock",
+        "url": "https://www.jw.com.au/product/corsair-ws-300-ryzen-ai-max-395-128gb-1tb-8060s",
+        "scraped_awst": "2026-10-01T00:27:49+08:00",
+        "ship_to_au_notes": "AU retailer native AUD",
+        "source": "jw_algolia_reverify"
       }
     }
   },
   "offers": [
-    {
-      "retailer": "amazon.com.au",
-      "title": "GMKtec EVO-X2 AI Mini PC Ryzen AI Max+ 395 Superchip 128GB LPDDR5X 2TB SSD",
-      "config_match": "exact",
-      "match_notes": "GMKtec Evo-X2; Strix Halo / AI Max; 128GB",
-      "product_family": "strix_halo_128",
-      "price_aud": 1593.47,
-      "currency_original": "AUD",
-      "price_original": 1593.47,
-      "stock": "oos",
-      "url": "https://www.amazon.com.au/dp/B0FS18K54S",
-      "asin": "B0FS18K54S",
-      "scraped_awst": "2026-09-30T18:13:31+08:00",
-      "ship_to_au_notes": "Amazon AU — currently unavailable",
-      "source": "amazon_dp"
-    },
-    {
-      "retailer": "gmktec.com",
-      "title": "GMKtec EVO-X2 AMD Ryzen AI Max+ 395 AI Mini PC (128GB class)",
-      "config_match": "exact",
-      "match_notes": "GMKtec Evo-X2; Strix Halo / AI Max; 128GB",
-      "product_family": "strix_halo_128",
-      "price_aud": 3157.43,
-      "currency_original": "USD",
-      "price_original": 2199.99,
-      "fx_rate": 1.4352,
-      "fx_as_of": "2026-09-30",
-      "stock": "oos",
-      "url": "https://www.gmktec.com/products/amd-ryzen%E2%84%A2-ai-max-395-evo-x2-ai-mini-pc",
-      "scraped_awst": "2026-09-30T18:13:31+08:00",
-      "ship_to_au_notes": "GMKtec direct USD; confirm ship-to-AU + duties/GST",
-      "source": "gmktec_listing"
-    },
-    {
-      "retailer": "gmktec.com",
-      "title": "GMKtec EVO-X3 AMD Ryzen AI Max+ 395 AI Mini PC (128GB class)",
-      "config_match": "exact",
-      "match_notes": "Strix Halo / AI Max; 128GB",
-      "product_family": "strix_halo_128",
-      "price_aud": 5453.75,
-      "currency_original": "USD",
-      "price_original": 3799.99,
-      "fx_rate": 1.4352,
-      "fx_as_of": "2026-09-30",
-      "stock": "oos",
-      "url": "https://www.gmktec.com/products/gmktec-evo-x3-ai-mini-pc-amd-ryzen-ai-max-395",
-      "scraped_awst": "2026-09-30T18:13:31+08:00",
-      "ship_to_au_notes": "GMKtec direct USD; confirm ship-to-AU + duties/GST",
-      "source": "gmktec_listing"
-    },
-    {
-      "retailer": "frame.work",
-      "title": "Framework Desktop Mainboard — Ryzen AI Max+ 395 - 128GB",
-      "config_match": "exact",
-      "match_notes": "Framework Desktop; Strix Halo / AI Max; 128GB",
-      "product_family": "strix_halo_128",
-      "price_aud": 1699.0,
-      "currency_original": "AUD",
-      "price_original": 1699.0,
-      "stock": "oos",
-      "url": "https://frame.work/au/en/products/framework-desktop-mainboard-amd-ryzen-ai-max-300-series?v=FRAMBM0006",
-      "scraped_awst": "2026-09-30T18:13:31+08:00",
-      "ship_to_au_notes": "Framework AU store; VAT included",
-      "source": "framework_au_option",
-      "verify_notes": "verified_text_price; price looks like lower config — confirm on page"
-    },
-    {
-      "retailer": "gmktec.com",
-      "title": "GMKtec EVO-X5 Pro AMD Ryzen AI Max+ PRO 495 AI Mini PC (192GB Gorgon Halo)",
-      "config_match": "exact",
-      "match_notes": "Gorgon Halo / AI Max+ Pro 495 192GB class",
-      "product_family": "gorgon_192",
-      "price_aud": 9470.88,
-      "currency_original": "USD",
-      "price_original": 6599.0,
-      "fx_rate": 1.4352,
-      "fx_as_of": "2026-09-30",
-      "stock": "oos",
-      "url": "https://www.gmktec.com/products/gmktec-evo-x5-pro-amd-ryzen-ai-max-pro-495-ai-mini-pc",
-      "scraped_awst": "2026-09-30T18:13:31+08:00",
-      "ship_to_au_notes": "GMKtec direct USD; confirm ship-to-AU + duties/GST",
-      "source": "gmktec_listing"
-    },
     {
       "retailer": "igamingcomputer.com.au",
       "title": "NVIDIA DGX Spark Founders Edition - 4TB/128GB",
@@ -263,14 +158,14 @@
       "retailer": "wisp.net.au",
       "title": "NVIDIA DGX Spark Founders Edition AI Supercomputer",
       "config_match": "exact",
-      "match_notes": "NVIDIA DGX Spark named",
+      "match_notes": "NVIDIA DGX Spark named | VERIFY-corrected live AUD 8791.97 in_stock",
       "product_family": "dgx_spark",
       "price_aud": 8791.97,
       "currency_original": "AUD",
       "price_original": 8791.97,
       "stock": "in_stock",
       "url": "https://wisp.net.au/nvidia-dgx-spark.html",
-      "scraped_awst": "2026-09-30T18:13:31+08:00",
+      "scraped_awst": "2026-10-01T00:27:49+08:00",
       "ship_to_au_notes": "Wisp Australia",
       "source": "verified_page",
       "verify_notes": "verified_ldjson"
@@ -318,9 +213,9 @@
       "price_original": 8999.0,
       "stock": "in_stock",
       "url": "https://www.pccasegear.com/products/73308/nvidia-dgx-spark-founders-edition-128gb-mini-pc",
-      "scraped_awst": "2026-10-01T00:23:14+08:00",
+      "scraped_awst": "2026-10-01T00:27:49+08:00",
       "ship_to_au_notes": "AU retailer native AUD",
-      "source": "pccg_algolia"
+      "source": "pccg_algolia_reverify"
     },
     {
       "retailer": "pccasegear.com",
@@ -333,9 +228,9 @@
       "price_original": 179999.0,
       "stock": "in_stock",
       "url": "https://www.pccasegear.com/products/73632/msi-xpertstation-ws300-dgx-spark-workstation",
-      "scraped_awst": "2026-10-01T00:23:17+08:00",
+      "scraped_awst": "2026-10-01T00:27:49+08:00",
       "ship_to_au_notes": "AU retailer native AUD",
-      "source": "pccg_algolia"
+      "source": "pccg_algolia_reverify"
     },
     {
       "retailer": "jw.com.au",
@@ -348,9 +243,9 @@
       "price_original": 8999.0,
       "stock": "in_stock",
       "url": "https://www.jw.com.au/product/nvidia-dgx-spark-founders-edition-anz-4tb-128gb",
-      "scraped_awst": "2026-10-01T00:23:14+08:00",
+      "scraped_awst": "2026-10-01T00:27:49+08:00",
       "ship_to_au_notes": "AU retailer native AUD",
-      "source": "jw_algolia"
+      "source": "jw_algolia_reverify"
     },
     {
       "retailer": "jw.com.au",
@@ -363,9 +258,9 @@
       "price_original": 8888.0,
       "stock": "in_stock",
       "url": "https://www.jw.com.au/product/asus-ascent-gx10-ai-supercomputer-mini-pc-128gb-ram-1tb",
-      "scraped_awst": "2026-10-01T00:23:21+08:00",
+      "scraped_awst": "2026-10-01T00:27:49+08:00",
       "ship_to_au_notes": "AU retailer native AUD",
-      "source": "jw_algolia"
+      "source": "jw_algolia_reverify"
     },
     {
       "retailer": "jw.com.au",
@@ -378,9 +273,9 @@
       "price_original": 11999.0,
       "stock": "in_stock",
       "url": "https://www.jw.com.au/product/asus-ascent-gx10-ai-128gb-4tb-dgxos",
-      "scraped_awst": "2026-10-01T00:23:21+08:00",
+      "scraped_awst": "2026-10-01T00:27:49+08:00",
       "ship_to_au_notes": "AU retailer native AUD",
-      "source": "jw_algolia"
+      "source": "jw_algolia_reverify"
     },
     {
       "retailer": "pccasegear.com",
@@ -393,9 +288,9 @@
       "price_original": 6999.0,
       "stock": "in_stock",
       "url": "https://www.pccasegear.com/products/73392/corsair-ryzen-ai-max-395-radeon-8060s-ai-workstation",
-      "scraped_awst": "2026-10-01T00:23:19+08:00",
+      "scraped_awst": "2026-10-01T00:27:49+08:00",
       "ship_to_au_notes": "AU retailer native AUD",
-      "source": "pccg_algolia"
+      "source": "pccg_algolia_reverify"
     },
     {
       "retailer": "pccasegear.com",
@@ -408,9 +303,9 @@
       "price_original": 7599.0,
       "stock": "in_stock",
       "url": "https://www.pccasegear.com/products/73288/hp-zbook-ultra-14-g1a-ryzen-ai-max-395-64gb-1tb-win11-pro-14in-laptop",
-      "scraped_awst": "2026-10-01T00:23:19+08:00",
+      "scraped_awst": "2026-10-01T00:27:49+08:00",
       "ship_to_au_notes": "AU retailer native AUD",
-      "source": "pccg_algolia"
+      "source": "pccg_algolia_reverify"
     },
     {
       "retailer": "jw.com.au",
@@ -423,9 +318,9 @@
       "price_original": 7499.0,
       "stock": "in_stock",
       "url": "https://www.jw.com.au/product/corsair-ws300-ryzen-ai-max-395-128-2t-2t-8060s",
-      "scraped_awst": "2026-10-01T00:23:19+08:00",
+      "scraped_awst": "2026-10-01T00:27:49+08:00",
       "ship_to_au_notes": "AU retailer native AUD",
-      "source": "jw_algolia"
+      "source": "jw_algolia_reverify"
     },
     {
       "retailer": "jw.com.au",
@@ -438,9 +333,9 @@
       "price_original": 6999.0,
       "stock": "in_stock",
       "url": "https://www.jw.com.au/product/corsair-ws-300-ryzen-ai-max-395-128gb-1tb-8060s",
-      "scraped_awst": "2026-10-01T00:23:19+08:00",
+      "scraped_awst": "2026-10-01T00:27:49+08:00",
       "ship_to_au_notes": "AU retailer native AUD",
-      "source": "jw_algolia"
+      "source": "jw_algolia_reverify"
     },
     {
       "retailer": "jw.com.au",
@@ -453,9 +348,9 @@
       "price_original": 5499.0,
       "stock": "in_stock",
       "url": "https://www.jw.com.au/product/corsair-ws-300-ryzen-ai-max-385-64gb-1tb-8050s",
-      "scraped_awst": "2026-10-01T00:23:18+08:00",
+      "scraped_awst": "2026-10-01T00:27:49+08:00",
       "ship_to_au_notes": "AU retailer native AUD",
-      "source": "jw_algolia"
+      "source": "jw_algolia_reverify"
     },
     {
       "retailer": "pccasegear.com",
@@ -468,9 +363,9 @@
       "price_original": 9649.0,
       "stock": "in_stock",
       "url": "https://www.pccasegear.com/products/71807/asus-ascent-gx10-compact-desktop-ai-supercomputer-128gb-1tb",
-      "scraped_awst": "2026-10-01T00:23:20+08:00",
+      "scraped_awst": "2026-10-01T00:27:49+08:00",
       "ship_to_au_notes": "AU retailer native AUD",
-      "source": "pccg_algolia"
+      "source": "pccg_algolia_reverify"
     },
     {
       "retailer": "jw.com.au",
@@ -483,9 +378,9 @@
       "price_original": 9988.0,
       "stock": "in_stock",
       "url": "https://www.jw.com.au/product/asus-ascent-gx10-compact-desktop-ai-supercomputer-gb10-grace-blackwell-superchip-128gb-ram-2tb-ssd-dgx-os",
-      "scraped_awst": "2026-10-01T00:23:21+08:00",
+      "scraped_awst": "2026-10-01T00:27:49+08:00",
       "ship_to_au_notes": "AU retailer native AUD",
-      "source": "jw_algolia"
+      "source": "jw_algolia_reverify"
     },
     {
       "retailer": "centrecom.com.au",
