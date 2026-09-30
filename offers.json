@@ -1,7 +1,7 @@
 {
   "currency": "AUD",
   "market": "AU",
-  "scraped_awst": "2026-10-01T00:40:34+08:00",
+  "scraped_awst": "2026-10-01T00:40:48+08:00",
   "fx_note": "FX via frankfurter.app as of 2026-09-30: USD->AUD 1.4352",
   "offers": [
     {
@@ -43,23 +43,6 @@
       "verified_awst": "2026-10-01T00:35:23+08:00",
       "fx_note": "USD\u2192AUD 1.4352 (2026-09-30 frankfurter)",
       "verify_notes": " | QA-fix AUD\u21925453.75 @ 2026-10-01T00:40:15+08:00"
-    },
-    {
-      "retailer": "frame.work",
-      "title": "Framework Desktop Mainboard \u2014 Ryzen AI Max+ 395 - 128GB",
-      "config_match": "exact",
-      "match_notes": "Framework Desktop; Strix Halo / AI Max; 128GB",
-      "product_family": "strix_halo_128",
-      "price_aud": 1699.0,
-      "currency_original": "AUD",
-      "price_original": 1699.0,
-      "stock": "in_stock",
-      "url": "https://frame.work/au/en/products/framework-desktop-mainboard-amd-ryzen-ai-max-300-series?v=FRAMBM0006",
-      "scraped_awst": "2026-09-30T18:13:31+08:00",
-      "ship_to_au_notes": "Framework AU store; VAT included",
-      "source": "framework_au_option",
-      "verify_notes": "verified_text_price; price looks like lower config \u2014 confirm on page",
-      "verified_awst": "2026-10-01T00:35:23+08:00"
     },
     {
       "retailer": "gmktec.com",
@@ -319,17 +302,49 @@
       "retailer": "store.minisforum.com",
       "title": "MINISFORUM MS-S1 MAX 128GB Max AI Compute Edition",
       "config_match": "exact",
-      "match_notes": "Minisforum; 128GB",
+      "match_notes": "Minisforum; 128GB | live LD+JSON/Shopify",
       "product_family": "strix_halo_128",
       "price_aud": 5452.32,
       "currency_original": "USD",
       "price_original": 3799.0,
       "stock": "in_stock",
-      "url": "https://store.minisforum.com/products/minisforum-ms-s1-max-mini-pc?variant=47071388139765",
-      "scraped_awst": "2026-10-01T00:39:25+08:00",
-      "ship_to_au_notes": "Brand USD; FX frankfurter USD\u2192AUD 1.4352 (2026-09-30)",
-      "source": "p0_brand_recheck",
-      "verified_awst": "2026-10-01T00:39:25+08:00"
+      "url": "https://store.minisforum.com/products/minisforum-ms-s1-max-mini-pc",
+      "scraped_awst": "2026-10-01T00:40:45+08:00",
+      "ship_to_au_notes": "Brand store ships intl; USD\u2192AUD@1.4352",
+      "source": "p0_live_verify",
+      "verified_awst": "2026-10-01T00:40:45+08:00"
+    },
+    {
+      "retailer": "store.minisforum.com",
+      "title": "MINISFORUM MS-S1 MAX 64GB Local AI Pilot Edition",
+      "config_match": "equivalent",
+      "match_notes": "64GB near-equiv | live LD+JSON/Shopify",
+      "product_family": "strix_halo_128",
+      "price_aud": 3730.08,
+      "currency_original": "USD",
+      "price_original": 2599.0,
+      "stock": "in_stock",
+      "url": "https://store.minisforum.com/products/minisforum-ms-s1-max-64gb",
+      "scraped_awst": "2026-10-01T00:40:46+08:00",
+      "ship_to_au_notes": "Brand store ships intl; USD\u2192AUD@1.4352",
+      "source": "p0_live_verify",
+      "verified_awst": "2026-10-01T00:40:46+08:00"
+    },
+    {
+      "retailer": "store.minisforum.com",
+      "title": "MINISFORUM MS-S1 MAX-P495",
+      "config_match": "exact",
+      "match_notes": "Gorgon Halo / AI Max+ Pro 495 192GB class | live LD+JSON/Shopify",
+      "product_family": "gorgon_192",
+      "price_aud": 10619.04,
+      "currency_original": "USD",
+      "price_original": 7399.0,
+      "stock": "in_stock",
+      "url": "https://store.minisforum.com/products/minisforum-ms-s1-max-p495-ai-workstation",
+      "scraped_awst": "2026-10-01T00:40:47+08:00",
+      "ship_to_au_notes": "Brand store ships intl; USD\u2192AUD@1.4352",
+      "source": "p0_live_verify",
+      "verified_awst": "2026-10-01T00:40:47+08:00"
     }
   ],
   "qa_merged_awst": "2026-10-01T00:40:15+08:00"
