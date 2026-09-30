@@ -1,40 +1,49 @@
 {
-  "built_awst": "2026-09-30T18:14:12+08:00",
-  "offers": 9,
-  "in_stock": 6,
+  "live_https_url": "https://biggles10-claude.github.io/retail-halo-search-au/",
+  "offers_count": 22,
+  "in_stock_count": 17,
   "cheapest_exact_in_stock": {
-    "retailer": "gmktec.com",
-    "title": "GMKtec EVO-X2 AMD Ryzen AI Max+ 395 AI Mini PC (128GB class)",
-    "config_match": "exact",
-    "match_notes": "GMKtec official store listing; Evo-X2 AI Max+ 395; 128GB LPDDR5X class — verify config on PDP",
-    "product_family": "strix_halo_128",
-    "price_aud": 3140.93,
-    "currency_original": "USD",
-    "price_original": 2199.99,
-    "fx_rate": 1.4277,
-    "fx_as_of": "2026-09-29",
-    "stock": "in_stock",
-    "url": "https://www.gmktec.com/products/amd-ryzen%E2%84%A2-ai-max-395-evo-x2-ai-mini-pc",
-    "scraped_awst": "2026-09-30T18:13:31+08:00",
-    "ship_to_au_notes": "GMKtec direct USD; confirm ship-to-AU + duties/GST",
-    "source": "gmktec_listing"
+    "title": "Corsair Workstation 300 Ryzen AI Max+ 395, 128GB RAM, 1TB SSD, Radeon 8060S, Windows 11 Home",
+    "retailer": "jw.com.au",
+    "price_aud": 6999.0,
+    "url": "https://www.jw.com.au/product/corsair-ws-300-ryzen-ai-max-395-128gb-1tb-8060s"
   },
   "cheapest_exact_any": {
-    "retailer": "amazon.com.au",
     "title": "GMKtec EVO-X2 AI Mini PC Ryzen AI Max+ 395 Superchip 128GB LPDDR5X 2TB SSD",
-    "config_match": "exact",
-    "match_notes": "GMKtec Evo-X2 128GB Amazon AU ASIN B0FS18K54S; page says Currently unavailable",
-    "product_family": "strix_halo_128",
+    "retailer": "amazon.com.au",
     "price_aud": 1593.47,
-    "currency_original": "AUD",
-    "price_original": 1593.47,
-    "stock": "oos",
-    "url": "https://www.amazon.com.au/dp/B0FS18K54S",
-    "asin": "B0FS18K54S",
-    "scraped_awst": "2026-09-30T18:13:31+08:00",
-    "ship_to_au_notes": "Amazon AU — currently unavailable",
-    "source": "amazon_dp"
+    "url": "https://www.amazon.com.au/dp/B0FS18K54S"
   },
-  "cheapest_equiv_in_stock": null,
-  "fx_note": "USD→AUD 1.4277 as of 2026-09-29 (frankfurter.app)"
+  "cheapest_equivalent_in_stock": {
+    "title": "Corsair Workstation 300 Ryzen AI Max 385, 64GB RAM, 1TB SSD, Radeon 8050S, Windows 11 Home",
+    "retailer": "jw.com.au",
+    "price_aud": 5499.0,
+    "url": "https://www.jw.com.au/product/corsair-ws-300-ryzen-ai-max-385-64gb-1tb-8050s"
+  },
+  "fx_note": "FX via frankfurter.app as of 2026-09-30: USD->AUD 1.4352",
+  "retailers": [
+    "amazon.com.au",
+    "centrecom.com.au",
+    "frame.work",
+    "gmktec.com",
+    "igamingcomputer.com.au",
+    "jw.com.au",
+    "pccasegear.com",
+    "ple.com.au",
+    "prology.net",
+    "wisp.net.au"
+  ],
+  "unblocked": [
+    "pccasegear Algolia",
+    "jw Algolia",
+    "centrecom API via Playwright",
+    "amazon curl_cffi"
+  ],
+  "still_blocked": [
+    "cplonline Cloudflare 403",
+    "centrecom HTML storefront 403 (API OK)",
+    "scorptec/mwave/Shopping Express: no Halo-class listings found",
+    "aussiedevelopments.com.au DNS NXDOMAIN",
+    "StaticICE: no priced Halo hits this run"
+  ]
 }
