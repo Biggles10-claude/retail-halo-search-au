@@ -1,0 +1,144 @@
+{
+  "ok": true,
+  "direct_home_status": 403,
+  "direct_note": "cloud IPs typically CF403 Attention Required",
+  "queries": {
+    "Ryzen AI Max+ 395": {
+      "status": 200,
+      "cpl_hits": 4
+    },
+    "Ryzen AI Max": {
+      "status": 200,
+      "cpl_hits": 1
+    },
+    "Framework Desktop": {
+      "status": 200,
+      "cpl_hits": 0
+    },
+    "DGX Spark": {
+      "status": 200,
+      "cpl_hits": 1
+    },
+    "GMKtec": {
+      "status": 200,
+      "cpl_hits": 0
+    },
+    "Minisforum": {
+      "status": 200,
+      "cpl_hits": 0
+    },
+    "Beelink": {
+      "status": 200,
+      "cpl_hits": 0
+    },
+    "strix halo": {
+      "status": 200,
+      "cpl_hits": 0
+    },
+    "Gorgon": {
+      "status": 200,
+      "cpl_hits": 0
+    },
+    "Corsair WS": {
+      "status": 200,
+      "cpl_hits": 0
+    },
+    "ASUS ROG Flow Z13": {
+      "status": 200,
+      "cpl_hits": 1
+    },
+    "HP ZBook Ultra": {
+      "status": 200,
+      "cpl_hits": 2
+    },
+    "ASUS Ascent GX10": {
+      "status": 200,
+      "cpl_hits": 0
+    }
+  },
+  "products": [
+    {
+      "retailer": "cplonline.com.au",
+      "title": "HP BG1Q1PT Zbook Ultra 14 G1a Laptop 14\" WUXGA Ryzen AI Max+ PRO 395 32GB 1",
+      "price_aud": 5025.0,
+      "url": "https://cplonline.com.au/hp-bg1q1pt-zbook-ultra-14-g1a-laptop-14-wuxga-ryzen-ai-max-pro-395-32gb-1tb-w11p.html",
+      "stock": "unknown",
+      "source": "cpl_staticice_gh",
+      "query": "Ryzen AI Max+ 395"
+    },
+    {
+      "retailer": "cplonline.com.au",
+      "title": "HP BG1Q2PT Zbook Ultra 14 G1a Laptop 14\" WUXGA Ryzen AI Max+ PRO 395 64GB 1",
+      "price_aud": 6929.0,
+      "url": "https://cplonline.com.au/hp-bg1q2pt-zbook-ultra-14-g1a-laptop-14-wuxga-ryzen-ai-max-pro-395-64gb-1tb-w11p.html",
+      "stock": "unknown",
+      "source": "cpl_staticice_gh",
+      "query": "Ryzen AI Max+ 395"
+    },
+    {
+      "retailer": "cplonline.com.au",
+      "title": "HP BG1Q4PT Zbook Ultra 14 G1a Laptop 14\" 3K Ryzen AI Max+ PRO 395 64GB 2TB",
+      "price_aud": 8563.0,
+      "url": "https://cplonline.com.au/hp-bg1q4pt-zbook-ultra-14-g1a-laptop-14-3k-ryzen-ai-max-pro-395-64gb-2tb-w11p.html",
+      "stock": "unknown",
+      "source": "cpl_staticice_gh",
+      "query": "Ryzen AI Max+ 395"
+    },
+    {
+      "retailer": "cplonline.com.au",
+      "title": "HP BG1Q5PT Zbook Ultra 14 G1a Laptop 14\" 3K Ryzen AI Max+ PRO 395 128GB 2TB",
+      "price_aud": 11059.0,
+      "url": "https://cplonline.com.au/hp-bg1q5pt-zbook-ultra-14-g1a-laptop-14-3k-ryzen-ai-max-pro-395-128gb-2tb-w11p.html",
+      "stock": "unknown",
+      "source": "cpl_staticice_gh",
+      "query": "Ryzen AI Max+ 395"
+    },
+    {
+      "retailer": "cplonline.com.au",
+      "title": "HP BG1P5PT Zbook Ultra 14 G1a Laptop 14\" WUXGA Ryzen AI Max PRO 380 16GB 51",
+      "price_aud": 4169.0,
+      "url": "https://cplonline.com.au/hp-bg1p5pt-zbook-ultra-14-g1a-laptop-14-wuxga-ryzen-ai-max-pro-380-16gb-512gb-w11p.html",
+      "stock": "unknown",
+      "source": "cpl_staticice_gh",
+      "query": "Ryzen AI Max"
+    },
+    {
+      "retailer": "cplonline.com.au",
+      "title": "Nvidia Q112-400G-CU0-5 400G QSFP112 Passive DAC Cable for DGX Spark Stackin",
+      "price_aud": 249.0,
+      "url": "https://cplonline.com.au/nvidia-q112-400g-cu0-5-400g-qsfp112-passive-dac-cable-for-dgx-spark-stacking.html",
+      "stock": "unknown",
+      "source": "cpl_staticice_gh",
+      "query": "DGX Spark"
+    },
+    {
+      "retailer": "cplonline.com.au",
+      "title": "ASUS GZ302EAC-RU178W ROG Flow Z13 Gaming Laptop 13.4\" WQXGA Touch Ryzen AI",
+      "price_aud": 6999.0,
+      "url": "https://cplonline.com.au/asus-gz302eac-ru178w-rog-flow-z13-laptop-13-4-wqxga-ryzen-ai-max-395-128gb-1tb.html",
+      "stock": "unknown",
+      "source": "cpl_staticice_gh",
+      "query": "ASUS ROG Flow Z13"
+    },
+    {
+      "retailer": "cplonline.com.au",
+      "title": "HP D9FJ3PT ZBook 8 G1i Laptop 14\" Touch Ultra 5 225U 16GB 512GB W11P",
+      "price_aud": 2499.0,
+      "url": "https://cplonline.com.au/hp-d9fj3pt-zbook-8-g1i-laptop-14-touch-ultra-5-225u-16gb-512gb-w11p.html",
+      "stock": "unknown",
+      "source": "cpl_staticice_gh",
+      "query": "HP ZBook Ultra"
+    },
+    {
+      "retailer": "cplonline.com.au",
+      "title": "HP D9FG7PT ZBook 8 G1i Laptop 14\" Ultra 5 225U 32GB 1TB W11P",
+      "price_aud": 2799.0,
+      "url": "https://cplonline.com.au/hp-d9fg7pt-zbook-8-g1i-laptop-14-ultra-5-225u-32gb-1tb-w11p.html",
+      "stock": "unknown",
+      "source": "cpl_staticice_gh",
+      "query": "HP ZBook Ultra"
+    }
+  ],
+  "error": null,
+  "direct_home_snip": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>"
+}
