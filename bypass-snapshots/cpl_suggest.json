@@ -1,7 +1,84 @@
 {
   "ok": true,
-  "halo_hits": 0,
-  "board_policy": "stock=unknown \u2192 NOTES only",
-  "note": "CPL StaticICE currently only surfaces ZBook/Flow/cable noise for AI Max queries; halo filter drops them",
-  "products": []
+  "direct_home_status": 403,
+  "direct_note": "cloud IPs typically CF403 Attention Required",
+  "board_policy": "stock=unknown \u2192 NOTES only, never Artifacts board",
+  "queries": {
+    "GMKtec Evo-X2 128GB": {
+      "status": 200,
+      "cpl_hits": 0
+    },
+    "GMKtec EVO-X2": {
+      "status": 200,
+      "cpl_hits": 0
+    },
+    "GMKtec Gorgon": {
+      "status": 200,
+      "cpl_hits": 0
+    },
+    "Framework Desktop 128GB": {
+      "status": 200,
+      "cpl_hits": 0
+    },
+    "Framework Desktop AI Max": {
+      "status": 200,
+      "cpl_hits": 0
+    },
+    "Minisforum MS-S1 Max": {
+      "status": 200,
+      "cpl_hits": 0
+    },
+    "Minisforum AI Max": {
+      "status": 200,
+      "cpl_hits": 0
+    },
+    "Beelink GTi AI": {
+      "status": 200,
+      "cpl_hits": 0
+    },
+    "Beelink Strix Halo": {
+      "status": 200,
+      "cpl_hits": 0
+    },
+    "Ryzen AI Max+ 395": {
+      "status": 200,
+      "cpl_hits": 0
+    },
+    "Ryzen AI Max 395 128GB": {
+      "status": 200,
+      "cpl_hits": 0
+    },
+    "Strix Halo 128GB": {
+      "status": 200,
+      "cpl_hits": 0
+    },
+    "NVIDIA DGX Spark": {
+      "status": 200,
+      "cpl_hits": 0
+    },
+    "DGX Spark": {
+      "status": 200,
+      "cpl_hits": 0
+    },
+    "Gorgon Halo 192GB": {
+      "status": 200,
+      "cpl_hits": 0
+    },
+    "Gorgon Halo": {
+      "status": 200,
+      "cpl_hits": 0
+    },
+    "Corsair WS300": {
+      "status": 200,
+      "cpl_hits": 0
+    },
+    "ASUS Ascent GX10": {
+      "status": 200,
+      "cpl_hits": 0
+    }
+  },
+  "products": [],
+  "error": null,
+  "direct_home_snip": "<!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>",
+  "halo_hits": 0
 }
