@@ -1,0 +1,69 @@
+{
+  "validated_awst": "2026-10-01T01:03:55+08:00",
+  "constraints": {
+    "strix_halo_128": {
+      "ram_gb": 128,
+      "label": "Strix Halo / AI Max+ 395 class 128GB UMA"
+    },
+    "gorgon_192": {
+      "ram_gb": 192,
+      "label": "Gorgon Halo / AI Max+ PRO 495 class ~192GB"
+    },
+    "dgx_spark": {
+      "ram_gb": 128,
+      "label": "DGX Spark / GB10 128GB unified"
+    }
+  },
+  "counts": {
+    "input_offers": 35,
+    "board_offers": 35,
+    "exact": 26,
+    "near_equiv": 9,
+    "wrong_config_quarantined": 0,
+    "ram_unknown_on_board": 1
+  },
+  "dropped_wrong_config": [],
+  "cheapest_exact_any": {
+    "title": "GMKtec EVO-X2 AMD Ryzen AI Max+ 395 AI Mini PC (128GB class)",
+    "price_aud": 3157.43,
+    "ram_gb": 128,
+    "market_label": "fx_usd",
+    "url": "https://www.gmktec.com/products/amd-ryzen%E2%84%A2-ai-max-395-evo-x2-ai-mini-pc",
+    "retailer": "gmktec.com",
+    "config_match": "exact"
+  },
+  "cheapest_exact_aud_checkout": {
+    "title": "WEELIAO ONEXStation Mini PC AI Workstation, AMD Ryzen AI Max+ 395, 128GB LPDDR5X, Radeon 8060S, RGB Lighting, Local AI Computing, AAA Gaming Desktop (128GB RAM+1TB SSD)",
+    "price_aud": 4812.98,
+    "ram_gb": 128,
+    "market_label": "aud_checkout",
+    "url": "https://www.amazon.com.au/dp/B0H5C72276",
+    "retailer": "amazon.com.au",
+    "config_match": "exact"
+  },
+  "cheapest_strix_128_exact": {
+    "title": "GMKtec EVO-X2 AMD Ryzen AI Max+ 395 AI Mini PC (128GB class)",
+    "price_aud": 3157.43,
+    "ram_gb": 128,
+    "market_label": "fx_usd",
+    "url": "https://www.gmktec.com/products/amd-ryzen%E2%84%A2-ai-max-395-evo-x2-ai-mini-pc",
+    "retailer": "gmktec.com",
+    "config_match": "exact"
+  },
+  "cheapest_strix_128_exact_aud_checkout": {
+    "title": "WEELIAO ONEXStation Mini PC AI Workstation, AMD Ryzen AI Max+ 395, 128GB LPDDR5X, Radeon 8060S, RGB Lighting, Local AI Computing, AAA Gaming Desktop (128GB RAM+1TB SSD)",
+    "price_aud": 4812.98,
+    "ram_gb": 128,
+    "market_label": "aud_checkout",
+    "url": "https://www.amazon.com.au/dp/B0H5C72276",
+    "retailer": "amazon.com.au",
+    "config_match": "exact"
+  },
+  "validation_pass": true,
+  "fails": [],
+  "notes": [
+    "64GB Strix rows kept as near_equiv only \u2014 never cheapest exact",
+    "wrong_config quarantined off published board",
+    "fx_usd = foreign store \u00d7 FX; aud_checkout = AU buy path"
+  ]
+}
