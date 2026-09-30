@@ -1,0 +1,36 @@
+name: CPL CF bypass fetch
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 */6 * * *"
+permissions:
+  contents: write
+jobs:
+  cpl:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Fetch CPL suggest API
+        run: python tools/cpl_fetch.py
+        env:
+          OUT_DIR: out
+      - name: Upload artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cpl-suggest
+          path: out/cpl_suggest.json
+          if-no-files-found: warn
+      - name: Commit snapshot
+        if: success()
+        run: |
+          mkdir -p bypass-snapshots
+          cp out/cpl_suggest.json bypass-snapshots/cpl_suggest.json
+          git config user.name "cpl-bypass-bot"
+          git config user.email "cpl-bypass-bot@users.noreply.github.com"
+          git add bypass-snapshots/cpl_suggest.json
+          git diff --staged --quiet || git commit -m "chore: CPL suggest snapshot $(date -u +%Y-%m-%dT%H%MZ)"
+          git push
