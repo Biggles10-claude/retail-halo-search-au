@@ -1,7 +1,7 @@
 {
   "kpi": {
-    "offers": 36,
-    "in_stock": 36,
+    "offers": 35,
+    "in_stock": 35,
     "cheapest_exact_in_stock": {
       "retailer": "gmktec.com",
       "title": "GMKtec EVO-X2 AMD Ryzen AI Max+ 395 AI Mini PC (128GB class)",
@@ -84,7 +84,7 @@
       "asin": "B0FH29CTQC",
       "seller": "GMKtec-AUS"
     },
-    "scraped_awst": "2026-10-01T00:45:41+08:00",
+    "scraped_awst": "2026-10-01T00:52:01+08:00",
     "fx_note": "FX via frankfurter.app as of 2026-09-30: USD->AUD 1.4352"
   },
   "per_class": {
@@ -789,27 +789,6 @@
       "verify_notes": "au-buybox glow3000; Only 5 left in stock.; seller=Cutesliving",
       "asin": "B0GX1SHL92",
       "seller": "Cutesliving"
-    },
-    {
-      "retailer": "amazon.com.au",
-      "title": "MINISFORUM MS-S1 MAX Mini AI Workstation PC, AMD Ryzen AI Max+ 395 (16C/32T),RDNA3.5 GPU,128GB LPDDR5x RAM 2TB SSMINI PC, Dual M.2 PCIe 4.0,PCIe x16 Slot, USB4 V2(80Gbps)& Dual 10GbE, 320W PSU,Wi-Fi 7",
-      "config_match": "exact",
-      "match_notes": "Minisforum; Strix Halo / AI Max; 128GB; seller=ARISOY AU-STORE",
-      "product_family": "strix_halo_128",
-      "price_aud": 13607.78,
-      "currency_original": "AUD",
-      "price_original": 13607.78,
-      "fx_rate": 1.0,
-      "fx_as_of": "2026-10-01",
-      "stock": "in_stock",
-      "url": "https://www.amazon.com.au/dp/B0G2VJR4JD",
-      "scraped_awst": "2026-10-01T00:43:59+08:00",
-      "ship_to_au_notes": "Amazon AU buybox zip3000; availability='Usually dispatched within 7 to 8 days'; glow='Melbourne 3000\\u200c'",
-      "source": "amazon_buybox_serp_siblings",
-      "verified_awst": "2026-10-01T00:45:41+08:00",
-      "verify_notes": "au-buybox glow3000; Usually dispatched within 7 to 8 days; seller=ARISOY AU-STORE",
-      "asin": "B0G2VJR4JD",
-      "seller": "ARISOY AU-STORE"
     },
     {
       "retailer": "amazon.com.au",
