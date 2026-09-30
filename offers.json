@@ -1,7 +1,7 @@
 {
   "kpi": {
-    "offers": 35,
-    "in_stock": 35,
+    "offers": 36,
+    "in_stock": 36,
     "cheapest_exact_in_stock": {
       "retailer": "gmktec.com",
       "title": "GMKtec EVO-X2 AMD Ryzen AI Max+ 395 AI Mini PC (128GB class)",
@@ -162,9 +162,9 @@
       "market_label": "aud_checkout",
       "validation_notes": "64GB when hunt wants 128GB — near_equiv only, never cheapest exact"
     },
-    "scraped_awst": "2026-10-01T00:52:01+08:00",
+    "scraped_awst": "2026-10-01T01:04:42+08:00",
     "fx_note": "FX via frankfurter.app as of 2026-09-30: USD->AUD 1.4352",
-    "validated_awst": "2026-10-01T01:03:55+08:00"
+    "validated_awst": "2026-10-01T01:05:04+08:00"
   },
   "per_class": {
     "dgx_spark": {
@@ -1043,6 +1043,29 @@
       "verify_notes": "au-buybox glow3000; In stock; seller=dixinyun",
       "asin": "B0H7J3S7T2",
       "seller": "dixinyun",
+      "ram_gb": 128,
+      "market_label": "aud_checkout"
+    },
+    {
+      "retailer": "amazon.com.au",
+      "title": "GMKtec X3 AI Mini PC AMD Ryzen Al Max+ 395 128GB LPDDR5X 2TB PCIe 4.0 SSD",
+      "config_match": "exact",
+      "match_notes": "SERP sibling buybox; seller=Amazon US",
+      "product_family": "strix_halo_128",
+      "price_aud": 6667.12,
+      "currency_original": "AUD",
+      "price_original": 6667.12,
+      "fx_rate": 1.0,
+      "fx_as_of": "2026-10-01",
+      "stock": "in_stock",
+      "url": "https://www.amazon.com.au/dp/B0H4R5RQJN",
+      "scraped_awst": "2026-10-01T00:57:20+08:00",
+      "ship_to_au_notes": "Amazon AU buybox zip3000; availability='In stock'",
+      "source": "amazon_buybox_45_siblings",
+      "verified_awst": "2026-10-01T01:04:42+08:00",
+      "verify_notes": "BUYBOX_45; In stock; seller=Amazon US",
+      "asin": "B0H4R5RQJN",
+      "seller": "Amazon US",
       "ram_gb": 128,
       "market_label": "aud_checkout"
     }
