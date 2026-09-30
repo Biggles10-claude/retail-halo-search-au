@@ -1,30 +1,5 @@
 {
   "live_https_url": "https://biggles10-claude.github.io/retail-halo-search-au/",
-<<<<<<< HEAD
-  "offers_count": 17,
-  "in_stock_count": 17,
-  "board_policy": "in_stock_only",
-  "cheapest_exact_in_stock": {
-    "title": "Corsair Workstation 300 Ryzen AI Max+ 395, 128GB RAM, 1TB SSD, Radeon 8060S, Windows 11 Home",
-    "retailer": "jw.com.au",
-    "price_aud": 6999.0,
-    "url": "https://www.jw.com.au/product/corsair-ws-300-ryzen-ai-max-395-128gb-1tb-8060s"
-  },
-  "cheapest_equivalent_in_stock": {
-    "title": "Corsair Workstation 300 Ryzen AI Max 385, 64GB RAM, 1TB SSD, Radeon 8050S, Windows 11 Home",
-    "retailer": "jw.com.au",
-    "price_aud": 5499.0,
-    "url": "https://www.jw.com.au/product/corsair-ws-300-ryzen-ai-max-385-64gb-1tb-8050s"
-  },
-  "cheapest_dgx_in_stock": {
-    "title": "NVIDIA DGX Spark Founders Edition - 4TB/128GB",
-    "retailer": "igamingcomputer.com.au",
-    "price_aud": 8599.0,
-    "url": "https://igamingcomputer.com.au/products/nvidia-dgx-spark-founders-edition-4tb-128gb"
-  },
-  "fx_note": "FX via frankfurter.app as of 2026-09-30: USD->AUD 1.4352",
-  "retailers": [
-=======
   "offers_count": 18,
   "in_stock_count": 18,
   "board_policy": "in_stock_only",
@@ -53,7 +28,6 @@
   "fx_note": "FX via frankfurter.app as of 2026-09-30: USD->AUD 1.4352",
   "retailers": [
     "amazon.com.au",
->>>>>>> 20bf3cd (Coverage FAIL fix: Amazon AU B0H5C72276 WEELIAO ONEXStation in-stock AUD 4812.98)
     "centrecom.com.au",
     "igamingcomputer.com.au",
     "jw.com.au",
@@ -61,15 +35,5 @@
     "ple.com.au",
     "prology.net",
     "wisp.net.au"
-<<<<<<< HEAD
-  ],
-  "wisp_corrected": {
-    "price_aud": 8791.97,
-    "stock": "in_stock"
-  },
-  "dropped_oos": 5,
-  "verified_awst": "2026-10-01T00:27:49+08:00"
-=======
   ]
->>>>>>> 20bf3cd (Coverage FAIL fix: Amazon AU B0H5C72276 WEELIAO ONEXStation in-stock AUD 4812.98)
 }
