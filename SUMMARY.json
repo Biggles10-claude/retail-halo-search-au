@@ -1,31 +1,29 @@
 {
   "live_https_url": "https://biggles10-claude.github.io/retail-halo-search-au/",
-  "offers_count": 18,
-  "in_stock_count": 18,
+  "offers_count": 22,
+  "in_stock_count": 22,
   "board_policy": "in_stock_only",
   "cheapest_exact_in_stock": {
     "title": "WEELIAO ONEXStation Mini PC AI Workstation, AMD Ryzen AI Max+ 395, 128GB LPDDR5X, Radeon 8060S, RGB Lighting, Local AI Computing, AAA Gaming Desktop (128GB RAM+1TB SSD)",
     "retailer": "amazon.com.au",
     "price_aud": 4812.98,
-    "url": "https://www.amazon.com.au/dp/B0H5C72276"
+    "url": "https://www.amazon.com.au/dp/B0H5C72276",
+    "asin": "B0H5C72276"
   },
   "cheapest_equivalent_in_stock": {
-    "title": "Corsair Workstation 300 Ryzen AI Max 385, 64GB RAM, 1TB SSD, Radeon 8050S, Windows 11 Home",
-    "retailer": "jw.com.au",
-    "price_aud": 5499.0,
-    "url": "https://www.jw.com.au/product/corsair-ws-300-ryzen-ai-max-385-64gb-1tb-8050s"
+    "title": "GMKtec EVO-X2 AI Mini PC AMD Ryzen AI Max+ 395 (up to 5.1GHz) Mini Gaming PC, 64GB LPDDR5X 8000MHz (8GB x 8), 1TB PCIe 4.0 SSD, 8K Display for Four Screens, WiFi 7 & USB4, SD Card Reader 4.0",
+    "retailer": "amazon.com.au",
+    "price_aud": 4293.15,
+    "url": "https://www.amazon.com.au/dp/B0F62TLND2"
   },
   "added_this_pass": [
     {
       "asin": "B0H5C72276",
-      "retailer": "amazon.com.au",
       "price_aud": 4812.98,
-      "stock": "in_stock",
-      "note": "WEELIAO ONEXStation \u2014 Coverage FAIL fix"
+      "note": "WEELIAO ONEXStation Coverage FAIL fix"
     }
   ],
-  "verified_awst": "2026-10-01T00:33:42+08:00",
-  "fx_note": "FX via frankfurter.app as of 2026-09-30: USD->AUD 1.4352",
+  "verified_awst": "2026-10-01T00:35:35+08:00",
   "retailers": [
     "amazon.com.au",
     "centrecom.com.au",
