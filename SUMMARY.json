@@ -1,0 +1,40 @@
+{
+  "built_awst": "2026-09-30T18:13:31+08:00",
+  "offers": 9,
+  "in_stock": 6,
+  "cheapest_exact_in_stock": {
+    "retailer": "gmktec.com",
+    "title": "GMKtec EVO-X2 AMD Ryzen AI Max+ 395 AI Mini PC (128GB class)",
+    "config_match": "exact",
+    "match_notes": "GMKtec official store listing; Evo-X2 AI Max+ 395; 128GB LPDDR5X class — verify config on PDP",
+    "product_family": "strix_halo_128",
+    "price_aud": 3140.93,
+    "currency_original": "USD",
+    "price_original": 2199.99,
+    "fx_rate": 1.4277,
+    "fx_as_of": "2026-09-29",
+    "stock": "in_stock",
+    "url": "https://www.gmktec.com/products/amd-ryzen%E2%84%A2-ai-max-395-evo-x2-ai-mini-pc",
+    "scraped_awst": "2026-09-30T18:13:31+08:00",
+    "ship_to_au_notes": "GMKtec direct USD; confirm ship-to-AU + duties/GST",
+    "source": "gmktec_listing"
+  },
+  "cheapest_exact_any": {
+    "retailer": "amazon.com.au",
+    "title": "GMKtec EVO-X2 AI Mini PC Ryzen AI Max+ 395 Superchip 128GB LPDDR5X 2TB SSD",
+    "config_match": "exact",
+    "match_notes": "GMKtec Evo-X2 128GB Amazon AU ASIN B0FS18K54S; page says Currently unavailable",
+    "product_family": "strix_halo_128",
+    "price_aud": 1593.47,
+    "currency_original": "AUD",
+    "price_original": 1593.47,
+    "stock": "oos",
+    "url": "https://www.amazon.com.au/dp/B0FS18K54S",
+    "asin": "B0FS18K54S",
+    "scraped_awst": "2026-09-30T18:13:31+08:00",
+    "ship_to_au_notes": "Amazon AU — currently unavailable",
+    "source": "amazon_dp"
+  },
+  "cheapest_equiv_in_stock": null,
+  "fx_note": "USD→AUD 1.4277 as of 2026-09-29 (frankfurter.app)"
+}

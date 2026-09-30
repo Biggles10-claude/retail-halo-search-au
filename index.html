@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Retail Halo Search — AU market</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --bg:#0f1115; --surface:#171a21; --ink:#f2f1ec; --muted:#9a9aa3;
+  --line:rgba(255,255,255,0.10); --accent:#d4b56a;
+  --ok:#3d9a6a; --warn:#c4a35a; --bad:#c45c5c;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:"IBM Plex Sans",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+header{position:sticky;top:0;z-index:10;background:rgba(15,17,21,0.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:0.85rem 1.25rem}
+header h1{margin:0;font-size:1.15rem;font-weight:600}
+header .meta{color:var(--muted);font-size:0.85rem;margin-top:0.2rem}
+main{max-width:1100px;margin:0 auto;padding:1.25rem}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:0.75rem;margin:1rem 0 1.25rem}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:0.9rem 1rem}
+.kpi .l{color:var(--muted);font-size:0.75rem;text-transform:uppercase;letter-spacing:0.04em}
+.kpi .v{font-size:1.25rem;font-weight:600;margin-top:0.25rem}
+.kpi .s{font-size:0.78rem;color:var(--muted);margin-top:0.2rem;word-break:break-word}
+.filters{display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:1rem;align-items:center}
+.filters input,.filters select{background:var(--surface);border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:0.55rem 0.7rem;font:inherit;min-height:44px}
+.filters input{flex:1;min-width:180px}
+table{width:100%;border-collapse:collapse;font-size:0.92rem}
+th,td{text-align:left;padding:0.65rem 0.5rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--muted);font-weight:500;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.04em}
+tr:hover td{background:rgba(255,255,255,0.02)}
+.badge{display:inline-block;padding:0.15rem 0.45rem;border-radius:6px;font-size:0.72rem;font-weight:600}
+.badge.exact{background:rgba(61,154,106,0.2);color:var(--ok)}
+.badge.equivalent{background:rgba(196,163,90,0.2);color:var(--warn)}
+.stock-in_stock{color:var(--ok)} .stock-oos{color:var(--bad)} .stock-unknown{color:var(--muted)}
+a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+.caveat{color:var(--muted);font-size:0.85rem;margin-top:1.5rem;padding-top:1rem;border-top:1px solid var(--line)}
+.money{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+</style>
+</head>
+<body>
+<header>
+  <h1>Retail Halo Search — Australia</h1>
+  <div class="meta">Strix Halo 128GB mini-PCs · NVIDIA DGX Spark · Gorgon Halo 192GB (+ equivalents) · AUD · scraped live · never invented</div>
+</header>
+<main>
+  <div class="kpis" id="kpis"></div>
+  <div class="filters">
+    <input id="q" placeholder="Search title / retailer…" type="search"/>
+    <select id="match"><option value="all">Exact + equivalent</option><option value="exact">Exact only</option><option value="equivalent">Equivalent only</option></select>
+    <select id="stock"><option value="all">Any stock</option><option value="in_stock">In stock</option><option value="oos">OOS</option><option value="unknown">Unknown</option></select>
+    <select id="cls"><option value="all">All families</option></select>
+    <select id="sort"><option value="price_asc">Price ↑</option><option value="price_desc">Price ↓</option><option value="retailer">Retailer</option></select>
+  </div>
+  <div style="overflow-x:auto">
+  <table>
+    <thead><tr>
+      <th>Price AUD</th><th>Product</th><th>Match</th><th>Family</th><th>Retailer</th><th>Stock</th><th>Link</th>
+    </tr></thead>
+    <tbody id="rows"></tbody>
+  </table>
+  </div>
+  <p class="caveat" id="caveat"></p>
+</main>
+<script>
+const DATA = {"kpi": {"offers": 9, "in_stock": 6, "cheapest_exact_in_stock": {"retailer": "gmktec.com", "title": "GMKtec EVO-X2 AMD Ryzen AI Max+ 395 AI Mini PC (128GB class)", "config_match": "exact", "match_notes": "GMKtec official store listing; Evo-X2 AI Max+ 395; 128GB LPDDR5X class — verify config on PDP", "product_family": "strix_halo_128", "price_aud": 3140.93, "currency_original": "USD", "price_original": 2199.99, "fx_rate": 1.4277, "fx_as_of": "2026-09-29", "stock": "in_stock", "url": "https://www.gmktec.com/products/amd-ryzen%E2%84%A2-ai-max-395-evo-x2-ai-mini-pc", "scraped_awst": "2026-09-30T18:13:31+08:00", "ship_to_au_notes": "GMKtec direct USD; confirm ship-to-AU + duties/GST", "source": "gmktec_listing"}, "cheapest_exact_any": {"retailer": "amazon.com.au", "title": "GMKtec EVO-X2 AI Mini PC Ryzen AI Max+ 395 Superchip 128GB LPDDR5X 2TB SSD", "config_match": "exact", "match_notes": "GMKtec Evo-X2 128GB Amazon AU ASIN B0FS18K54S; page says Currently unavailable", "product_family": "strix_halo_128", "price_aud": 1593.47, "currency_original": "AUD", "price_original": 1593.47, "stock": "oos", "url": "https://www.amazon.com.au/dp/B0FS18K54S", "asin": "B0FS18K54S", "scraped_awst": "2026-09-30T18:13:31+08:00", "ship_to_au_notes": "Amazon AU — currently unavailable", "source": "amazon_dp"}, "cheapest_equiv_in_stock": null, "cheapest_equiv": null, "scraped_awst": "2026-09-30T18:13:31+08:00", "fx_note": "USD→AUD 1.4277 as of 2026-09-29 (frankfurter.app)"}, "per_class": {"dgx_spark": {"in_stock": {"retailer": "igamingcomputer.com.au", "title": "NVIDIA DGX Spark Founders Edition - 4TB/128GB", "config_match": "exact", "match_notes": "DGX Spark product page", "product_family": "dgx_spark", "price_aud": 8599.0, "currency_original": "AUD", "price_original": 8599.0, "stock": "in_stock", "url": "https://igamingcomputer.com.au/products/nvidia-dgx-spark-founders-edition-4tb-128gb", "scraped_awst": "2026-09-30T18:13:31+08:00", "ship_to_au_notes": "I Gaming Computer AU (WA)", "source": "verified_page"}, "any": {"retailer": "igamingcomputer.com.au", "title": "NVIDIA DGX Spark Founders Edition - 4TB/128GB", "config_match": "exact", "match_notes": "DGX Spark product page", "product_family": "dgx_spark", "price_aud": 8599.0, "currency_original": "AUD", "price_original": 8599.0, "stock": "in_stock", "url": "https://igamingcomputer.com.au/products/nvidia-dgx-spark-founders-edition-4tb-128gb", "scraped_awst": "2026-09-30T18:13:31+08:00", "ship_to_au_notes": "I Gaming Computer AU (WA)", "source": "verified_page"}}, "gorgon_192": {"in_stock": {"retailer": "gmktec.com", "title": "GMKtec EVO-X5 Pro AMD Ryzen AI Max+ PRO 495 AI Mini PC (192GB Gorgon Halo)", "config_match": "exact", "match_notes": "GMKtec Evo-X5 Pro Gorgon Halo / AI Max+ Pro 495 192GB class", "product_family": "gorgon_192", "price_aud": 9421.39, "currency_original": "USD", "price_original": 6599.0, "fx_rate": 1.4277, "fx_as_of": "2026-09-29", "stock": "in_stock", "url": "https://www.gmktec.com/products/gmktec-evo-x5-pro-amd-ryzen-ai-max-pro-495-ai-mini-pc", "scraped_awst": "2026-09-30T18:13:31+08:00", "ship_to_au_notes": "GMKtec direct USD; confirm ship-to-AU + duties/GST", "source": "gmktec_listing"}, "any": {"retailer": "gmktec.com", "title": "GMKtec EVO-X5 Pro AMD Ryzen AI Max+ PRO 495 AI Mini PC (192GB Gorgon Halo)", "config_match": "exact", "match_notes": "GMKtec Evo-X5 Pro Gorgon Halo / AI Max+ Pro 495 192GB class", "product_family": "gorgon_192", "price_aud": 9421.39, "currency_original": "USD", "price_original": 6599.0, "fx_rate": 1.4277, "fx_as_of": "2026-09-29", "stock": "in_stock", "url": "https://www.gmktec.com/products/gmktec-evo-x5-pro-amd-ryzen-ai-max-pro-495-ai-mini-pc", "scraped_awst": "2026-09-30T18:13:31+08:00", "ship_to_au_notes": "GMKtec direct USD; confirm ship-to-AU + duties/GST", "source": "gmktec_listing"}}, "strix_halo_128": {"in_stock": {"retailer": "gmktec.com", "title": "GMKtec EVO-X2 AMD Ryzen AI Max+ 395 AI Mini PC (128GB class)", "config_match": "exact", "match_notes": "GMKtec official store listing; Evo-X2 AI Max+ 395; 128GB LPDDR5X class — verify config on PDP", "product_family": "strix_halo_128", "price_aud": 3140.93, "currency_original": "USD", "price_original": 2199.99, "fx_rate": 1.4277, "fx_as_of": "2026-09-29", "stock": "in_stock", "url": "https://www.gmktec.com/products/amd-ryzen%E2%84%A2-ai-max-395-evo-x2-ai-mini-pc", "scraped_awst": "2026-09-30T18:13:31+08:00", "ship_to_au_notes": "GMKtec direct USD; confirm ship-to-AU + duties/GST", "source": "gmktec_listing"}, "any": {"retailer": "amazon.com.au", "title": "GMKtec EVO-X2 AI Mini PC Ryzen AI Max+ 395 Superchip 128GB LPDDR5X 2TB SSD", "config_match": "exact", "match_notes": "GMKtec Evo-X2 128GB Amazon AU ASIN B0FS18K54S; page says Currently unavailable", "product_family": "strix_halo_128", "price_aud": 1593.47, "currency_original": "AUD", "price_original": 1593.47, "stock": "oos", "url": "https://www.amazon.com.au/dp/B0FS18K54S", "asin": "B0FS18K54S", "scraped_awst": "2026-09-30T18:13:31+08:00", "ship_to_au_notes": "Amazon AU — currently unavailable", "source": "amazon_dp"}}}, "offers": [{"retailer": "amazon.com.au", "title": "GMKtec EVO-X2 AI Mini PC Ryzen AI Max+ 395 Superchip 128GB LPDDR5X 2TB SSD", "config_match": "exact", "match_notes": "GMKtec Evo-X2 128GB Amazon AU ASIN B0FS18K54S; page says Currently unavailable", "product_family": "strix_halo_128", "price_aud": 1593.47, "currency_original": "AUD", "price_original": 1593.47, "stock": "oos", "url": "https://www.amazon.com.au/dp/B0FS18K54S", "asin": "B0FS18K54S", "scraped_awst": "2026-09-30T18:13:31+08:00", "ship_to_au_notes": "Amazon AU — currently unavailable", "source": "amazon_dp"}, {"retailer": "gmktec.com", "title": "GMKtec EVO-X2 AMD Ryzen AI Max+ 395 AI Mini PC (128GB class)", "config_match": "exact", "match_notes": "GMKtec official store listing; Evo-X2 AI Max+ 395; 128GB LPDDR5X class — verify config on PDP", "product_family": "strix_halo_128", "price_aud": 3140.93, "currency_original": "USD", "price_original": 2199.99, "fx_rate": 1.4277, "fx_as_of": "2026-09-29", "stock": "in_stock", "url": "https://www.gmktec.com/products/amd-ryzen%E2%84%A2-ai-max-395-evo-x2-ai-mini-pc", "scraped_awst": "2026-09-30T18:13:31+08:00", "ship_to_au_notes": "GMKtec direct USD; confirm ship-to-AU + duties/GST", "source": "gmktec_listing"}, {"retailer": "gmktec.com", "title": "GMKtec EVO-X3 AMD Ryzen AI Max+ 395 AI Mini PC (128GB class)", "config_match": "exact", "match_notes": "GMKtec official store listing; Evo-X3 AI Max+ 395 Strix Halo class", "product_family": "strix_halo_128", "price_aud": 5425.25, "currency_original": "USD", "price_original": 3799.99, "fx_rate": 1.4277, "fx_as_of": "2026-09-29", "stock": "in_stock", "url": "https://www.gmktec.com/products/gmktec-evo-x3-ai-mini-pc-amd-ryzen-ai-max-395", "scraped_awst": "2026-09-30T18:13:31+08:00", "ship_to_au_notes": "GMKtec direct USD; confirm ship-to-AU + duties/GST", "source": "gmktec_listing"}, {"retailer": "frame.work", "title": "Framework Desktop Mainboard — Ryzen AI Max+ 395 - 128GB", "config_match": "exact", "match_notes": "Framework AU official config option Max+ 395 128GB; page shows Out of stock / pre-order deposit", "product_family": "strix_halo_128", "price_aud": 5539.0, "currency_original": "AUD", "price_original": 5539.0, "stock": "oos", "url": "https://frame.work/au/en/products/framework-desktop-mainboard-amd-ryzen-ai-max-300-series?v=FRAMBM0006", "scraped_awst": "2026-09-30T18:13:31+08:00", "ship_to_au_notes": "Framework AU store; VAT included", "source": "framework_au_option"}, {"retailer": "gmktec.com", "title": "GMKtec EVO-X5 Pro AMD Ryzen AI Max+ PRO 495 AI Mini PC (192GB Gorgon Halo)", "config_match": "exact", "match_notes": "GMKtec Evo-X5 Pro Gorgon Halo / AI Max+ Pro 495 192GB class", "product_family": "gorgon_192", "price_aud": 9421.39, "currency_original": "USD", "price_original": 6599.0, "fx_rate": 1.4277, "fx_as_of": "2026-09-29", "stock": "in_stock", "url": "https://www.gmktec.com/products/gmktec-evo-x5-pro-amd-ryzen-ai-max-pro-495-ai-mini-pc", "scraped_awst": "2026-09-30T18:13:31+08:00", "ship_to_au_notes": "GMKtec direct USD; confirm ship-to-AU + duties/GST", "source": "gmktec_listing"}, {"retailer": "igamingcomputer.com.au", "title": "NVIDIA DGX Spark Founders Edition - 4TB/128GB", "config_match": "exact", "match_notes": "DGX Spark product page", "product_family": "dgx_spark", "price_aud": 8599.0, "currency_original": "AUD", "price_original": 8599.0, "stock": "in_stock", "url": "https://igamingcomputer.com.au/products/nvidia-dgx-spark-founders-edition-4tb-128gb", "scraped_awst": "2026-09-30T18:13:31+08:00", "ship_to_au_notes": "I Gaming Computer AU (WA)", "source": "verified_page"}, {"retailer": "wisp.net.au", "title": "NVIDIA DGX Spark Founders Edition AI Supercomputer", "config_match": "exact", "match_notes": "DGX Spark product page", "product_family": "dgx_spark", "price_aud": 8645.0, "currency_original": "AUD", "price_original": 8645.0, "stock": "oos", "url": "https://wisp.net.au/nvidia-dgx-spark.html", "scraped_awst": "2026-09-30T18:13:31+08:00", "ship_to_au_notes": "Wisp Australia", "source": "verified_page"}, {"retailer": "prology.net", "title": "NVIDIA DGX Spark Mini Desktop AI Supercomputer – GB10 Grace Blackwell 128GB/4TB", "config_match": "exact", "match_notes": "DGX Spark product page (scraped price)", "product_family": "dgx_spark", "price_aud": 8688.0, "currency_original": "AUD", "price_original": 8688.0, "stock": "in_stock", "url": "https://prology.net/au/940-54242-0002-000-new", "scraped_awst": "2026-09-30T18:13:31+08:00", "ship_to_au_notes": "Prology Australia (NSW warehouse)", "source": "verified_page"}, {"retailer": "ple.com.au", "title": "NVIDIA DGX Spark Founders Edition Supercomputer - 4TB/128GB", "config_match": "exact", "match_notes": "DGX Spark PLE page; WA stores in stock", "product_family": "dgx_spark", "price_aud": 8999.0, "currency_original": "AUD", "price_original": 8999.0, "stock": "in_stock", "url": "https://www.ple.com.au/products/683549/nvidia-dgx-spark-founders-edition-supercomputer-4tb128gb", "scraped_awst": "2026-09-30T18:13:31+08:00", "ship_to_au_notes": "PLE Computers AU", "source": "verified_page"}]};
+function money(n){return n==null?'—':'$'+Number(n).toLocaleString('en-AU',{minimumFractionDigits:2,maximumFractionDigits:2})}
+function fmtOffer(o){if(!o)return '—';return money(o.price_aud)+' · '+(o.retailer||'')+' · '+(o.title||'').slice(0,70)}
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c]))}
+function renderKpis(){
+  const k=DATA.kpi;
+  const cards=[
+    ['Offers', k.offers, ''],
+    ['In stock', k.in_stock, ''],
+    ['Cheapest exact (in stock)', money(k.cheapest_exact_in_stock&&k.cheapest_exact_in_stock.price_aud), fmtOffer(k.cheapest_exact_in_stock)],
+    ['Cheapest exact (any)', money(k.cheapest_exact_any&&k.cheapest_exact_any.price_aud), fmtOffer(k.cheapest_exact_any)],
+    ['Cheapest equiv (in stock)', money(k.cheapest_equiv_in_stock&&k.cheapest_equiv_in_stock.price_aud), fmtOffer(k.cheapest_equiv_in_stock)],
+  ];
+  document.getElementById('kpis').innerHTML=cards.map(([l,v,s])=>`<div class="kpi"><div class="l">${l}</div><div class="v">${v}</div><div class="s">${s||''}</div></div>`).join('');
+  const cls=document.getElementById('cls');
+  const classes=[...new Set(DATA.offers.map(o=>o.product_family||o.target_class).filter(Boolean))].sort();
+  classes.forEach(c=>{const opt=document.createElement('option');opt.value=c;opt.textContent=c;cls.appendChild(opt)});
+  document.getElementById('caveat').textContent =
+    `Scraped ${k.scraped_awst||'—'} (AWST). ${k.fx_note||''} Aggregator hits should be verified on the retailer page. Wrong configs rejected. No prices invented.`;
+}
+function filtered(){
+  const q=(document.getElementById('q').value||'').toLowerCase();
+  const match=document.getElementById('match').value;
+  const stock=document.getElementById('stock').value;
+  const cls=document.getElementById('cls').value;
+  const sort=document.getElementById('sort').value;
+  let rows=DATA.offers.slice();
+  if(match!=='all') rows=rows.filter(o=>o.config_match===match);
+  if(stock!=='all') rows=rows.filter(o=>o.stock===stock);
+  if(cls!=='all') rows=rows.filter(o=>(o.product_family||o.target_class)===cls);
+  if(q) rows=rows.filter(o=>((o.title||'')+(o.retailer||'')+(o.match_notes||'')).toLowerCase().includes(q));
+  rows.sort((a,b)=>{
+    if(sort==='price_asc') return (a.price_aud??1e15)-(b.price_aud??1e15);
+    if(sort==='price_desc') return (b.price_aud??0)-(a.price_aud??0);
+    return String(a.retailer).localeCompare(String(b.retailer));
+  });
+  return rows;
+}
+function render(){
+  const rows=filtered();
+  document.getElementById('rows').innerHTML=rows.map(o=>`<tr>
+    <td class="money">${money(o.price_aud)}${o.currency_original&&o.currency_original!=='AUD'?`<div style="font-size:0.75rem;color:var(--muted);font-weight:400">${o.currency_original} ${o.price_original??''}</div>`:''}</td>
+    <td>${escapeHtml(o.title||'')}<div style="color:var(--muted);font-size:0.8rem">${escapeHtml(o.match_notes||'')}</div>
+      ${o.ship_to_au_notes?`<div style="color:var(--muted);font-size:0.75rem">${escapeHtml(o.ship_to_au_notes)}</div>`:''}</td>
+    <td><span class="badge ${o.config_match}">${o.config_match}</span></td>
+    <td>${escapeHtml(o.product_family||o.target_class||'')}</td>
+    <td>${escapeHtml(o.retailer||'')}</td>
+    <td class="stock-${o.stock||'unknown'}">${o.stock||''}</td>
+    <td>${o.url?`<a href="${o.url}" target="_blank" rel="noopener">Open</a>`:''}</td>
+  </tr>`).join('') || '<tr><td colspan="7">No offers match filters.</td></tr>';
+}
+['q','match','stock','cls','sort'].forEach(id=>document.getElementById(id).addEventListener('input',render));
+renderKpis(); render();
+</script>
+</body>
+</html>
