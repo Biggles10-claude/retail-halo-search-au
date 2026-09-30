@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""CPL enrichment for GitHub Actions via StaticICE.
+"""CPL enrichment for GitHub Actions via StaticICE (Halo query pack).
 
 Direct cplonline.com.au is CF hard-blocked on cloud/datacenter IPs.
+stock=unknown → board_eligible False (NOTES only).
 """
 from __future__ import annotations
 
@@ -9,10 +10,37 @@ import json, os, re, sys, time, urllib.parse, urllib.request
 from pathlib import Path
 
 QUERIES = [
-    "Ryzen AI Max+ 395", "Ryzen AI Max", "Framework Desktop", "DGX Spark",
-    "GMKtec", "Minisforum", "Beelink", "strix halo", "Gorgon", "Corsair WS",
-    "ASUS ROG Flow Z13", "HP ZBook Ultra", "ASUS Ascent GX10",
+    "GMKtec Evo-X2 128GB",
+    "GMKtec EVO-X2",
+    "GMKtec Gorgon",
+    "Framework Desktop 128GB",
+    "Framework Desktop AI Max",
+    "Minisforum MS-S1 Max",
+    "Minisforum AI Max",
+    "Beelink GTi AI",
+    "Beelink Strix Halo",
+    "Ryzen AI Max+ 395",
+    "Ryzen AI Max 395 128GB",
+    "Strix Halo 128GB",
+    "NVIDIA DGX Spark",
+    "DGX Spark",
+    "Gorgon Halo 192GB",
+    "Gorgon Halo",
+    "Corsair WS300",
+    "ASUS Ascent GX10",
 ]
+
+HALO_KEEP = re.compile(
+    r"DGX\s*Spark|Gorgon\s*Halo|Strix\s*Halo|Evo-?X[0-9]|Framework\s*Desktop|"
+    r"MS-?S1|MS-?A2|AI\s*Max\+?\s*(PRO\s*)?395|AI\s*Max\+?\s*(PRO\s*)?495|"
+    r"WS300|Ascent\s*GX10|mini\s*PC|mini-?pc|workstation",
+    re.I,
+)
+HALO_DROP = re.compile(
+    r"\b(laptop|zbook|notebook|ultrabook|Flow\s*Z13|cable|DAC|QSFP|cooler|monitor|"
+    r"headphones|PSU|power\s*supply)\b",
+    re.I,
+)
 
 UA = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -48,6 +76,12 @@ def _attr(attrs: str, name: str) -> str:
     return m.group(2).replace("&amp;", "&").replace("&quot;", '"')
 
 
+def _halo_ok(title: str) -> bool:
+    if not title or HALO_DROP.search(title):
+        return False
+    return bool(HALO_KEEP.search(title))
+
+
 def parse_staticice_cpl(html: str, query: str) -> list[dict]:
     out = []
     for m in re.finditer(r"<a\b([^>]+)>(.*?)</a>", html, re.I | re.S):
@@ -68,6 +102,8 @@ def parse_staticice_cpl(html: str, query: str) -> list[dict]:
         alt = _attr(attrs, "alt") or _attr(attrs, "title")
         title_m = re.search(r"latest price for\s+(.+?)(?:\.\.\.|$)", alt, re.I)
         title = (title_m.group(1).strip().rstrip(".") if title_m else "")[:240]
+        if not _halo_ok(title or name):
+            continue
         pm = re.search(r"\$\s*([0-9][0-9,]*(?:\.[0-9]{2})?)", inner)
         if not pm:
             continue
@@ -80,6 +116,7 @@ def parse_staticice_cpl(html: str, query: str) -> list[dict]:
             "stock": "unknown",
             "source": "cpl_staticice_gh",
             "query": query,
+            "board_eligible": False,
         })
     seen, dedup = set(), []
     for o in out:
@@ -97,6 +134,7 @@ def main() -> int:
         "ok": False,
         "direct_home_status": None,
         "direct_note": "cloud IPs typically CF403 Attention Required",
+        "board_policy": "stock=unknown → NOTES only, never Artifacts board",
         "queries": {},
         "products": [],
         "error": None,
@@ -124,10 +162,11 @@ def main() -> int:
         seen.add(p["url"])
         dedup.append(p)
     results["products"] = dedup
-    results["ok"] = len(dedup) > 0
+    results["ok"] = True  # successful StaticICE pass even if 0 halo hits
+    results["halo_hits"] = len(dedup)
     (out_dir / "cpl_suggest.json").write_text(json.dumps(results, indent=2))
-    print("ok=", results["ok"], "products=", len(dedup), "direct=", results["direct_home_status"])
-    return 0 if results["ok"] else 1
+    print("ok=", results["ok"], "halo_products=", len(dedup), "direct=", results["direct_home_status"])
+    return 0
 
 
 if __name__ == "__main__":
