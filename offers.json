@@ -1248,11 +1248,11 @@
       "source": "deep_wave3_umart_scorptec",
       "verified_awst": "2026-10-01T08:41:47+08:00",
       "fx_note": null,
-      "verify_notes": "Lead WebFetch confirm Post In Stock @ 2026-10-01T08:41:47+08:00; AUD 9399",
+      "verify_notes": "Lead WebFetch confirm Post In Stock @ 2026-10-01T08:41:47+08:00; AUD 9399 | QA_DELTA_UMART_SCORPTEC GREEN @ 2026-10-01T08:45:04+08:00",
       "ram_gb": 128,
       "market_label": "aud_checkout",
       "sku": "940-54242-0002-000",
-      "pending_qa": true
+      "pending_qa": false
     },
     {
       "retailer": "umart.com.au",
@@ -1272,12 +1272,12 @@
       "source": "deep_wave3_umart_scorptec",
       "verified_awst": "2026-10-01T08:41:47+08:00",
       "fx_note": null,
-      "verify_notes": "Lead WebFetch confirm Post In Stock @ 2026-10-01T08:41:47+08:00; AUD 8999 (was 11999)",
+      "verify_notes": "Lead WebFetch confirm Post In Stock @ 2026-10-01T08:41:47+08:00; AUD 8999 (was 11999) | QA_DELTA_UMART_SCORPTEC GREEN @ 2026-10-01T08:45:04+08:00",
       "ram_gb": null,
       "market_label": "aud_checkout",
       "sku": "ATAGB10-9000",
       "validation_notes": "GB10 OEM near_equiv to DGX Spark; ram not stated on PDP title — never cheapest exact",
-      "pending_qa": true
+      "pending_qa": false
     },
     {
       "retailer": "scorptec.com.au",
@@ -1297,11 +1297,11 @@
       "source": "deep_wave3_umart_scorptec",
       "verified_awst": "2026-10-01T08:41:47+08:00",
       "fx_note": null,
-      "verify_notes": "Lead WebFetch confirm AUS Delivery In Stock @ 2026-10-01T08:41:47+08:00; AUD 10999",
+      "verify_notes": "Lead WebFetch confirm AUS Delivery In Stock @ 2026-10-01T08:41:47+08:00; AUD 10999 | QA_DELTA_UMART_SCORPTEC GREEN @ 2026-10-01T08:45:04+08:00",
       "ram_gb": 128,
       "market_label": "aud_checkout",
       "sku": "940-54242-0002-000",
-      "pending_qa": true
+      "pending_qa": false
     }
   ]
 }
