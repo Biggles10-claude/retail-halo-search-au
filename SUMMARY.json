@@ -1,40 +1,62 @@
 {
+  "built_awst": "2026-10-01T08:16:00+08:00",
   "live_https_url": "https://biggles10-claude.github.io/retail-halo-search-au/",
-  "offers_count": 20,
-  "in_stock_count": 20,
+  "commit": "c7f33fa",
+  "offers_count": 42,
+  "in_stock_count": 42,
   "board_policy": "in_stock_only",
+  "counts": {
+    "exact": 32,
+    "near_equiv": 10,
+    "by_family": {
+      "strix_halo_128": 25,
+      "gorgon_192": 2,
+      "dgx_spark": 15
+    },
+    "by_market": {
+      "fx_usd": 6,
+      "aud_checkout": 36
+    }
+  },
   "cheapest_exact_in_stock": {
     "retailer": "gmktec.com",
     "title": "GMKtec EVO-X2 AMD Ryzen AI Max+ 395 AI Mini PC (128GB class)",
-    "config_match": "exact",
-    "match_notes": "GMKtec Evo-X2; Strix Halo / AI Max; 128GB",
-    "product_family": "strix_halo_128",
     "price_aud": 3157.43,
-    "currency_original": "USD",
-    "price_original": 2199.99,
-    "fx_rate": 1.4352,
-    "fx_as_of": "2026-09-30",
-    "stock": "in_stock",
     "url": "https://www.gmktec.com/products/amd-ryzen%E2%84%A2-ai-max-395-evo-x2-ai-mini-pc",
-    "scraped_awst": "2026-09-30T18:13:31+08:00",
-    "ship_to_au_notes": "GMKtec direct USD; confirm ship-to-AU + duties/GST",
-    "source": "gmktec_listing",
-    "verified_awst": "2026-10-01T00:35:21+08:00",
-    "fx_note": "USD\u2192AUD 1.4352 (2026-09-30 frankfurter)",
-    "verify_notes": " | QA-fix AUD\u21923157.43 @ 2026-10-01T00:40:15+08:00"
+    "ram_gb": 128,
+    "market_label": "fx_usd",
+    "config_match": "exact",
+    "product_family": "strix_halo_128"
   },
-  "status": "QA_MERGE_APPLIED_AWAITING_QA_GREEN",
-  "verified_awst": "2026-10-01T00:41:06+08:00",
-  "retailers": [
-    "amazon.com.au",
-    "centrecom.com.au",
-    "gmktec.com",
-    "igamingcomputer.com.au",
-    "jw.com.au",
-    "pccasegear.com",
-    "ple.com.au",
-    "prology.net",
-    "store.minisforum.com",
-    "wisp.net.au"
+  "cheapest_strix_128_exact_aud_checkout": {
+    "retailer": "amazon.com.au",
+    "title": "WEELIAO ONEXStation Mini PC AI Workstation, AMD Ryzen AI Max+ 395, 128GB LPDDR5X, Radeon 8060S, RGB Lighting, Local AI Computing, AAA Gaming Desktop (128GB RAM+1TB SSD)",
+    "price_aud": 4812.98,
+    "url": "https://www.amazon.com.au/dp/B0H5C72276",
+    "ram_gb": 128,
+    "market_label": "aud_checkout",
+    "config_match": "exact",
+    "product_family": "strix_halo_128"
+  },
+  "cheapest_dgx_exact": {
+    "retailer": "igamingcomputer.com.au",
+    "title": "NVIDIA DGX Spark Founders Edition - 4TB/128GB",
+    "price_aud": 8599.0,
+    "url": "https://igamingcomputer.com.au/products/nvidia-dgx-spark-founders-edition-4tb-128gb",
+    "ram_gb": 128,
+    "market_label": "aud_checkout",
+    "config_match": "exact",
+    "product_family": "dgx_spark"
+  },
+  "qa_expand_delta": "GREEN 6/6",
+  "blockers": [
+    "CPL CF403",
+    "0 AU-reseller Gorgon"
+  ],
+  "notes": [
+    "Expand QA GREEN 6/6",
+    "Deep Zbooks quarantined",
+    "CPL still CF403",
+    "Gorgon AU-reseller still 0"
   ]
 }
