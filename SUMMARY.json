@@ -1,21 +1,34 @@
 {
-  "built_awst": "2026-10-01T08:16:00+08:00",
+  "built_awst": "2026-10-01T08:31:00+08:00",
   "live_https_url": "https://biggles10-claude.github.io/retail-halo-search-au/",
-  "commit": "d350162",
-  "offers_count": 42,
-  "in_stock_count": 42,
+  "offers_count": 43,
+  "in_stock_count": 43,
   "board_policy": "in_stock_only",
   "counts": {
-    "exact": 32,
+    "board_offers": 43,
+    "exact": 33,
     "near_equiv": 10,
     "by_family": {
       "strix_halo_128": 25,
       "gorgon_192": 2,
-      "dgx_spark": 15
+      "dgx_spark": 16
     },
     "by_market": {
       "fx_usd": 6,
-      "aud_checkout": 36
+      "aud_checkout": 37
+    },
+    "by_retailer": {
+      "gmktec.com": 3,
+      "igamingcomputer.com.au": 1,
+      "wisp.net.au": 1,
+      "prology.net": 1,
+      "ple.com.au": 1,
+      "pccasegear.com": 6,
+      "jw.com.au": 8,
+      "centrecom.com.au": 1,
+      "amazon.com.au": 17,
+      "store.minisforum.com": 3,
+      "cplonline.com.au": 1
     }
   },
   "cheapest_exact_in_stock": {
@@ -48,15 +61,12 @@
     "config_match": "exact",
     "product_family": "dgx_spark"
   },
-  "qa_expand_delta": "GREEN 6/6",
-  "blockers": [
-    "CPL CF403",
-    "0 AU-reseller Gorgon"
+  "bypass_wins": [
+    "CPL PDP via WebFetch (box curl CF403)"
   ],
   "notes": [
-    "Expand QA GREEN 6/6",
-    "Deep Zbooks quarantined",
-    "CPL still CF403",
-    "Gorgon AU-reseller still 0"
+    "CPL first board row via WebFetch",
+    "box curl still CF403",
+    "Amazon 17 kept"
   ]
 }

@@ -1,0 +1,31 @@
+{
+  "method": "webfetch_direct_html",
+  "retrieved_awst": "2026-10-01T08:23:05+08:00",
+  "target": "https://cplonline.com.au/nvidia-940-54242-0002-000-dgx-spark-founders-edition-mini-pc-with-nvidia-blackwell-128gb-ram-4tb-ssd.html",
+  "alternate_target": "https://www.cplonline.com.au/nvidia-940-54242-0002-000-dgx-spark-founders-edition-mini-pc-with-nvidia-blackwell-128gb-ram-4tb-ssd.html",
+  "transport": "WebFetch public direct URL fetch (rendered HTML extraction)",
+  "cf_bypass": true,
+  "store_html": true,
+  "halo_product": true,
+  "product_title": "NVIDIA 940-54242-0002-000 DGX Spark Founders Edition Mini PC with Nvidia Blackwell 128GB RAM 4TB SSD",
+  "sku": "940-54242-0002-000",
+  "gtin": "810152850589",
+  "price_aud": 8999.0,
+  "live_in_stock": true,
+  "availability": {
+    "Online (Delivery)": "In Stock",
+    "Notting Hill (Pickup)": "In Stock",
+    "Preston (Pickup)": "In Stock",
+    "West Melbourne (Pickup)": "In Stock"
+  },
+  "evidence_text": [
+    "NVIDIA 940-54242-0002-000 DGX Spark Founders Edition Mini PC with Nvidia Blackwell 128GB RAM 4TB SSD",
+    "Online (Delivery) | In Stock",
+    "Notting Hill (Pickup) | In Stock",
+    "Preston (Pickup) | In Stock",
+    "West Melbourne (Pickup) | In Stock",
+    "$8,999.00",
+    "GTIN | 810152850589"
+  ],
+  "caveat": "WebFetch exposes rendered page content rather than raw response headers; direct curl/curl_cffi on the box remains CF403. This is direct CPL product HTML fetched by the public fetch provider, not StaticICE or a third-party stock claim."
+}

@@ -905,6 +905,29 @@
       "ram_gb": 64,
       "market_label": "aud_checkout",
       "pending_qa": false
+    },
+    {
+      "retailer": "cplonline.com.au",
+      "title": "NVIDIA 940-54242-0002-000 DGX Spark Founders Edition Mini PC with Nvidia Blackwell 128GB RAM 4TB SSD",
+      "config_match": "exact",
+      "match_notes": "CPL WebFetch PDP crack; SKU 940-54242-0002-000; Lead re-verified WebFetch 8999 in_stock",
+      "product_family": "dgx_spark",
+      "price_aud": 8999.0,
+      "currency_original": "AUD",
+      "price_original": 8999.0,
+      "fx_rate": null,
+      "fx_as_of": null,
+      "stock": "in_stock",
+      "url": "https://cplonline.com.au/nvidia-940-54242-0002-000-dgx-spark-founders-edition-mini-pc-with-nvidia-blackwell-128gb-ram-4tb-ssd.html",
+      "scraped_awst": "2026-10-01T08:23:05+08:00",
+      "ship_to_au_notes": "CPL AU checkout; Online delivery + Melb pickup in stock",
+      "source": "cpl_cf_direct_webfetch",
+      "verified_awst": "2026-10-01T08:31:00+08:00",
+      "fx_note": null,
+      "verify_notes": "Lead WebFetch confirm In Stock Online+NH/Preston/WM @ 2026-10-01T08:31:00+08:00; AUD 8999",
+      "ram_gb": 128,
+      "market_label": "aud_checkout",
+      "sku": "940-54242-0002-000"
     }
   ],
   "qa_merged_awst": "2026-10-01T00:40:15+08:00",
@@ -923,5 +946,7 @@
   "deep_zbook_quarantine_awst": "2026-10-01T08:13:51+08:00",
   "deep_zbook_quarantine_note": "Quarantined 3 HP Zbook laptop near_equiv off board (Halo filter: laptop noise)",
   "qa_expand_delta_awst": "2026-10-01T08:15:15+08:00",
-  "qa_expand_delta_note": "QA GREEN 6/6 expand pending"
+  "qa_expand_delta_note": "QA GREEN 6/6 expand pending",
+  "cpl_merge_awst": "2026-10-01T08:31:00+08:00",
+  "cpl_merge_note": "First CPL board row via WebFetch bypass (box curl still CF403)"
 }
